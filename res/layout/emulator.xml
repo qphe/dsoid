@@ -1,0 +1,146 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/emulator_layout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.opengl.GLSurfaceView 
+            android:id="@+id/screen" 
+            android:layout_width="match_parent" 
+            android:layout_height="match_parent"/> 
+            
+    <ImageButton
+        android:id="@+id/key_LEFT"
+        android:layout_marginBottom="60dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/key_side" />
+    <ImageButton
+        android:id="@+id/key_RIGHT" 
+        android:layout_marginLeft="50dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@id/key_LEFT"
+        android:layout_toRightOf="@id/key_LEFT"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/key_side" />
+    <ImageButton
+        android:id="@+id/key_UP" 
+        android:layout_marginBottom="50dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@id/key_LEFT"
+        android:layout_toRightOf="@id/key_LEFT"
+        android:background="@null"
+        android:scaleType="fitXY"
+		android:src="@drawable/key_up" />
+    <ImageButton
+        android:id="@+id/key_DOWN" 
+        android:layout_marginTop="50dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@id/key_LEFT"
+        android:layout_toRightOf="@id/key_LEFT"
+        android:background="@null"
+        android:scaleType="fitXY"
+		android:src="@drawable/key_up" />
+    <ImageButton
+        android:id="@+id/key_SELECT" 
+        android:layout_marginLeft="125dp"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignLeft="@id/key_LEFT"
+        android:layout_alignParentBottom="true"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/key_select" />
+    <ImageButton
+        android:id="@+id/key_A" 
+        android:layout_marginBottom="60dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@null" 
+        android:scaleType="fitXY"
+        android:src="@drawable/key_a" />
+    <ImageButton
+        android:id="@+id/key_B" 
+        android:layout_marginTop="50dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@id/key_A"
+        android:layout_toLeftOf="@id/key_A"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/key_b" />
+    <ImageButton
+        android:id="@+id/key_X" 
+        android:layout_marginBottom="50dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@id/key_A"
+        android:layout_toLeftOf="@id/key_A"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/key_x" />
+    <ImageButton
+        android:id="@+id/key_Y" 
+        android:layout_marginRight="50dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@id/key_A"
+        android:layout_toLeftOf="@id/key_A"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/key_y" />
+    <ImageButton
+        android:id="@+id/key_START" 
+        android:layout_marginRight="125dp"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignRight="@id/key_A"
+        android:layout_alignParentBottom="true"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/key_start" />
+    <ImageButton
+        android:id="@+id/key_L" 
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@id/key_LEFT"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/key_l" />
+    <ImageButton
+        android:id="@+id/key_R" 
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_alignRight="@id/key_A"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/key_r" />
+    <ImageButton
+        android:id="@+id/key_touch" 
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_centerHorizontal="true"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/key_touch" />
+    <ImageView
+	    android:id="@+id/touchCover"
+	    android:background="#0000"      
+	    android:scaleType="fitXY"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignParentTop="true"
+	    android:layout_width="match_parent" 
+	    android:layout_height="match_parent"/> 
+    
+</RelativeLayout>
